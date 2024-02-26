@@ -1,5 +1,6 @@
 -- MAU or Monthly Active Users
 -- Must include 2 digit month and 4 digit year. Be aware of time-zone discrepancies
+-- replace {app_id} with 5 digit app ID (found in URL)
 
 SELECT
     app_name,
