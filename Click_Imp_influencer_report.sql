@@ -1,4 +1,5 @@
--- Influencer report that gives more granular attribution detail than the click and impression MTA reports in the dashboard. 
+-- Influencer Report
+-- Gives more granular attribution detail than the out-of-box Click/Impression MTA reports.
 -- The query below combines the click and impression influencers and allows for additional columns to be included such as the tracker_name. 
 -- This query can be run in any app and is easy to modify, making it very flexible.
 
