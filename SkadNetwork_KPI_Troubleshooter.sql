@@ -1,4 +1,5 @@
 -- Do your users fire off your KPI events withing the required timeline thresholds to be measured within SkadNetwork attribution?
+-- This can help advertisers understand how long it takes, on average, for users to install the app and then fire off measurement events.
 -- This query will tell you how much time passes (avg) between the "register" for SKAD attribution aka _install event and your KPI event(s)
 
 SELECT
@@ -9,9 +10,9 @@ JOIN installs_primary i
 ON e.kochava_device_id = i.kochava_device_id
 WHERE event_name IN
   (
-    'QT_OAALeadSubmission_QM_LD',
-    'QT_UserIDCreation_QM_EV',
-    'QT_FirstDeposit_QM_EV'
+    'event_name_1',
+    'event_name_2',
+    'event_name_3'
   )
 GROUP BY event_name
 ORDER BY event_name asc
