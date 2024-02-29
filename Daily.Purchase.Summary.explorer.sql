@@ -1,3 +1,7 @@
+-- Daily Purchase Summary Report
+-- Reflects Session Begin events and Purchase events including any revenue metadata. 
+-- Groups into attributed network.
+
 select
 case when network_name is null then 'Summary' else network_name end as network_name,
 revenue,
