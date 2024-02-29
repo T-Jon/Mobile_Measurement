@@ -1,3 +1,8 @@
+-- KPI Event Retention
+-- % retained by day grouped by network
+-- Example uses 'Registration Complete' event
+
+
 SELECT
     DATE(i.date_occurred) AS Registation_Complete_date_utc,
     i.network_name as network_name,
