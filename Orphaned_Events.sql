@@ -1,4 +1,5 @@
--- Identifies quantity of events that are "orphaned" or are coming in w/o an associated _install event
+-- Identifies quantity of events that are "orphaned" or are coming in w/o an associated _install event.
+-- Large quantities of orphaned events may indicate an SDK miss-implementation or may be potential fraud.
 
 select
 	event_name,
